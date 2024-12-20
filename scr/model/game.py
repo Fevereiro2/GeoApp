@@ -31,11 +31,7 @@ class GeoQuizApp(toga.App):
             on_press=self.adicionar_pais,
             style=Pack(padding=(10, 0), font_size=16),
         )
-        location_button = toga.Button(
-            "GeoQuiz 🗺️",
-            on_press=self.geoquizz,  # Placeholder para outra funcionalidade
-            style=Pack(padding=(10, 0), font_size=16),
-        )
+
 
         # Rótulo de boas-vindas
         self.resultado_label = toga.Label(
@@ -49,7 +45,7 @@ class GeoQuizApp(toga.App):
                 self.resultado_label,
                 iniciar_button,
                 adicionar_button,
-                location_button,
+
             ],
             style=Pack(direction=COLUMN, alignment=CENTER, padding=20),
         )
@@ -58,9 +54,6 @@ class GeoQuizApp(toga.App):
         self.main_window.content = layout_box
         self.main_window.show()
 
-    async def geoquizz(self, widget):
-        """Placeholder para funcionalidade GeoQuiz."""
-        self.resultado_label.text = "GeoQuiz ainda não implementado."
 
     def close(self):
         """Fecha a aplicação corretamente."""
