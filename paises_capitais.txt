@@ -1,2 +1,5 @@
 França;Paris
 Portugal;Lisboa
+Espanha;Madrid
+Belgica;Bruxelas
+Teste;Teste
